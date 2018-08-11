@@ -579,6 +579,10 @@ jQuery.PrivateBin = (function($, sjcl, Base64, RawDeflate) {
                 ts: 128
             };
 
+            if ((message || '').trim().length === 0) {
+                message = "No Content!";
+            }
+
             if ((password || '').trim().length === 0) {
                 return sjcl.encrypt(key, compress(message), options);
             }
