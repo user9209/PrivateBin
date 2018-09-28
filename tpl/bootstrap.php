@@ -75,7 +75,8 @@ if ($MARKDOWN):
 endif;
 ?>
 		<script type="text/javascript" data-cfasync="false" src="js/purify-1.0.7.js" integrity="sha512-VnKJHLosO8z2ojNvWk9BEKYqnhZyWK9rM90FgZUUEp/PRnUqR5OLLKE0a3BkVmn7YgB7LXRrjHgFHQYKd6DAIA==" crossorigin="anonymous"></script>
-		<script type="text/javascript" data-cfasync="false" src="js/privatebin.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-r3trDMOxMzcMI2SEp4hj5ZuFsPT3twC7Ic9lqpXBeRqfXT8PtMbh4TcTeUvEpI3VeSTKbvrpnn0RhdKBYC2eug" crossorigin="anonymous"></script>
+		<!-- files needs LF !!! and  update with "openssl dgst -sha512 -binary privatebin.js | openssl base64 -A" -->
+		<script type="text/javascript" data-cfasync="false" src="js/privatebin.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-HkpsjFOybru7MBKL9z9S/g6256RByF1SGa1mah9NEBepKFGswgucQAEl9Xb2E5TvnKLfg8rUJLRob1TD3RT6Cg==" crossorigin="anonymous"></script>
 		<!--[if lt IE 10]>
 		<style type="text/css">body {padding-left:60px;padding-right:60px;} #ienotice {display:block;} #oldienotice {display:block;}</style>
 		<![endif]-->
